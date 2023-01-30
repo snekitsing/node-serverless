@@ -12,7 +12,7 @@ const router = express.Router();
 //   });
 // });
 
-// app.get("j/son", (req, res) => {
+// app.get("/json", (req, res) => {
 //   res.json({
 //     path: "json",
 //     Author: "Sing Nekitsing",
@@ -31,6 +31,13 @@ router.get("/test", (req, res) => {
   res.json({
     path: "test",
     message: "This is a test",
+  });
+});
+
+router.get("/json", (req, res) => {
+  res.json({
+    path: "json",
+    Author: "Sing Nekitsing",
   });
 });
 
